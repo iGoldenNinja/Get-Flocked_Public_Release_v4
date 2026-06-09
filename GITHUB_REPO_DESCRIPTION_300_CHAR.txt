@@ -1,0 +1,1 @@
+﻿Passive RF awareness firmware for M5Stack FIRE, derived from FlockSquawk, with logging, tone audio, debug tools, and East Coast OSM GPS/geofence support requiring a UART GPS module in the FIRE slot/port.

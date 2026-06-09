@@ -1,0 +1,14 @@
+# sound,frequency_hz,duration_ms,gap_ms
+startup,784,90,25
+startup,988,70,20
+startup,1175,90,25
+startup,1568,130,35
+startup,1319,70,20
+startup,1760,160,0
+ready,1300,90,30
+ready,1750,100,30
+ready,2200,140,0
+geo,1250,120,30
+geo,1650,120,30
+geo,2050,180,0
+alert,2400,700,0

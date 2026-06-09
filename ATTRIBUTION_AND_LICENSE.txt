@@ -1,0 +1,12 @@
+﻿ATTRIBUTION AND LICENSE
+
+Base project:
+FlockSquawk M5Stack FIRE firmware.
+
+This public package is a modified derivative. The codebase has been heavily changed for field logging, accuracy tuning, debug tools, GPS/geofence support, custom tone audio, and public clean-slate release packaging, but attribution to the original FlockSquawk creator/contributors should remain.
+
+License:
+The included firmware folders contain the GPLv3 LICENSE file from the upstream-derived project. Keep it with public releases.
+
+Data:
+No personal logs, private/personal coordinates, local field-test MAC lists, or saved configs are included in this package. The v4.30-v4.34 folders include public OSM-derived East Coast grouped geofence files for ready-to-use GEO setup.

@@ -1,0 +1,21 @@
+﻿GET-FLOCKED PUBLIC RELEASE v4 PACKAGE
+
+Use the Versions folder to pick a build.
+Each version contains:
+- firmware/flocksquawk_m5fire
+- SD_CARD_CLEAN_SLATE
+- SETUP_INSTRUCTIONS.txt
+
+The newest recommended build is v4.34.
+
+GPS/geofencing requires a compatible UART GPS module installed in the M5Stack FIRE module slot or connected to the configured GPS port and a valid satellite fix. RF detection still works without GPS.
+
+The package intentionally does not include private/personal coordinates, field logs, saved settings, local exact-MAC watch lists, or raw generated ALPR export dumps.
+
+The v4.30-v4.34 SD card folders include the East Coast OSM-derived grouped geofence dataset:
+- /geo_index.csv
+- /geo_groups/*.csv
+
+Keep those files together on the SD card root for ready-to-use grouped GEO alerts.
+
+The LICENSE file is preserved because this firmware is derived from GPLv3-licensed FlockSquawk code. Do not delete it from a public source release unless you have replaced it with a legally correct license/notice strategy.

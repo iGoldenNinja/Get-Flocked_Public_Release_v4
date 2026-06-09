@@ -1,0 +1,39 @@
+﻿GET-FLOCKED SIGNAL DECK v4.32 SETUP
+
+Added Debug Settings tools: Log Marker, GPS Status, Geo File Test, SD Write Test, BLE Scan Test, and WiFi Channel Test.
+
+1. Firmware
+   Open firmware/flocksquawk_m5fire/flocksquawk_m5fire.ino in Arduino IDE.
+   Board: esp32:esp32:m5stack-fire / M5Stack-FIRE.
+   Suggested libraries: M5Unified, NimBLE-Arduino, ArduinoJson.
+
+2. SD Card
+   Copy everything inside SD_CARD_CLEAN_SLATE to the root of the microSD card.
+   Keep the folder structure exactly as shown.
+
+GPS/OSM ready-to-use setup:
+- /geo_index.csv is populated with the East Coast grouped geofence index.
+- /geo_groups/ contains the matching grouped OSM-derived geofence CSV files.
+- Copy both to the SD card root exactly as included.
+- Use tools/build_geo_groups.py and tools/download_flock_cameras.py when you want to rebuild or extend coverage in future versions.
+- Do not publish private coordinates unless you have decided they are safe and lawful to publish.
+
+3. Logging
+   Logging is off unless enabled in the menu.
+   Turn Logging on only when collecting test evidence.
+   Public release folders do not include field_log.csv, wifi_sightings.csv, or ble_sightings.csv.
+
+4. GPS / Geofencing
+   RF detection works without GPS.
+   GEO alerts, GEO radius checks, and the map/geofence screen require a compatible UART GPS module installed in the M5Stack FIRE module slot or connected to the configured GPS port.
+   Enable GPS in Menu > GPS Settings after connecting the module.
+   Geofence alerts will not work until the GPS has a valid satellite fix.
+
+5. Field Tuning
+   The global detector signatures remain in the firmware.
+   Exact local watch-list MACs were removed for public release.
+   Add your own exact local watch-list entries only after repeated field verification.
+
+6. Attribution
+   Derived from the FlockSquawk M5Stack FIRE project.
+   Distributed as modified source under the included GPLv3 license.
